@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Global Class */
+
+
+
+header {
+    padding: 30px 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 120px;
+    background-color: cornsilk;
+    color: rgb(45, 95, 187);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    padding: 10px
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: cornflowerblue;
+    font-size: larger;
+    color: rgb(63, 35, 35);
+}
+
+/* custom styles */
+
+nav a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 800;
+    color: rgb(63, 35, 35);
+
+}
+
+header h1, p {
+    font-weight: 600;
+}
+
+header p {
+    margin-top: 7px;
+}
+
+a:hover {
+    content: '';
+    color: rgb(35, 4, 119);
+}
+
+.about-me {
+    display: flex;
+}
+
+footer p {
+
+}
