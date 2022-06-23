@@ -3,11 +3,15 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    line-height: 1.8;
 }
 
 /* Global Class */
 
 
+html {
+    scroll-behavior: smooth;
+}
 
 header {
     padding: 30px 10%;
@@ -26,6 +30,11 @@ nav {
     padding: 10px
 }
 
+img {
+    margin: 10px;
+    border-radius: 1em
+}
+
 footer {
     position: absolute;
     text-align: center;
@@ -34,6 +43,10 @@ footer {
     background-color: cornflowerblue;
     font-size: larger;
     color: rgb(63, 35, 35);
+}
+
+section {
+    padding: 2% 30px
 }
 
 /* custom styles */
@@ -57,12 +70,38 @@ header p {
 a:hover {
     content: '';
     color: rgb(35, 4, 119);
-}
+} 
 
 .about-me {
-    display: flex;
+    background-color: cornsilk;
 }
 
-footer p {
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px;
+}
 
+.contact-info {
+    background-color: cornsilk;
+    color: black;
+}
+
+.hopes-class {
+    background-color: rgb(9, 61, 158);
+    color: cornsilk;
+}
+
+.hopes-class img, .contact-info img {
+    max-width: 150px;
+}
+
+
+/* media query (hopefully) */
+
+@media only screen and (max-width: 750px) {
+    .hopes-class, .contact-info, .about-me {
+        background-color: blueviolet;
+    }
 }
